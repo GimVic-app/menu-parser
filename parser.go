@@ -18,9 +18,10 @@ type Kosilo struct {
 }
 
 type Malica struct {
-	Navadna        []string
-	VegSPerutnino  []string
-	Vegetarijanska []string
+	Navadna         []string
+	VegSPerutnino   []string
+	Vegetarijanska  []string
+	SadnoZelenjavna []string
 }
 
 func main() {
@@ -110,6 +111,9 @@ func processMalicaSel(sel [][]string) {
 		}
 		if sel[i][5] != "" {
 			temp.Vegetarijanska = append(temp.Vegetarijanska, sel[i][5])
+		}
+		if sel[i][6] != "" {
+			temp.SadnoZelenjavna = append(temp.SadnoZelenjavna, sel[i][5])
 		}
 	}
 
