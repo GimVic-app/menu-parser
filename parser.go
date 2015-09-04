@@ -106,13 +106,13 @@ func processMalicaSel(sel [][]string) {
 		if sel[i][1] != "" {
 			temp.Navadna = append(temp.Navadna, sel[i][1])
 		}
-		if sel[i][3] != "" {
+		if sel[i][2] != "" {
 			temp.VegSPerutnino = append(temp.VegSPerutnino, sel[i][3])
 		}
-		if sel[i][5] != "" {
+		if sel[i][3] != "" {
 			temp.Vegetarijanska = append(temp.Vegetarijanska, sel[i][5])
 		}
-		if sel[i][6] != "" {
+		if sel[i][4] != "" {
 			temp.SadnoZelenjavna = append(temp.SadnoZelenjavna, sel[i][5])
 		}
 	}
