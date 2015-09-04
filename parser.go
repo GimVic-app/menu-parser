@@ -107,13 +107,13 @@ func processMalicaSel(sel [][]string) {
 			temp.Navadna = append(temp.Navadna, sel[i][1])
 		}
 		if sel[i][2] != "" {
-			temp.VegSPerutnino = append(temp.VegSPerutnino, sel[i][3])
+			temp.VegSPerutnino = append(temp.VegSPerutnino, sel[i][2])
 		}
 		if sel[i][3] != "" {
-			temp.Vegetarijanska = append(temp.Vegetarijanska, sel[i][5])
+			temp.Vegetarijanska = append(temp.Vegetarijanska, sel[i][3])
 		}
 		if sel[i][4] != "" {
-			temp.SadnoZelenjavna = append(temp.SadnoZelenjavna, sel[i][5])
+			temp.SadnoZelenjavna = append(temp.SadnoZelenjavna, sel[i][4])
 		}
 	}
 
@@ -137,8 +137,8 @@ func processKosiloSel(sel [][]string) {
 		if sel[i][1] != "" {
 			temp.Navadno = append(temp.Navadno, sel[i][1])
 		}
-		if sel[i][3] != "" {
-			temp.Vegetarijansko = append(temp.Vegetarijansko, sel[i][3])
+		if sel[i][2] != "" {
+			temp.Vegetarijansko = append(temp.Vegetarijansko, sel[i][2])
 		}
 	}
 
